@@ -1,0 +1,16 @@
+@startuml
+class ParametrosConta {
+    -numeroConta: String
+    -nomeConta: String
+    -usuarioLogado: String
+    -ParametrosConta()
+    -{static} -instance: ParametrosConta
+    +{static} getInstance(): ParametrosConta
+    +getNumeroConta(): String
+    +setNumeroConta(numeroConta: String): void
+    +getNomeConta(): String
+    +setNomeConta(nomeConta: String): void
+    +getUsuarioLogado(): String
+    +setUsuarioLogado(usuarioLogado: String): void
+}
+@enduml
